@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#0f172a] text-white h-screen flex items-center justify-center">
+
+<div class="w-[800px] bg-[#1e293b] p-8 rounded-3xl shadow-2xl shadow-purple-500/20">
+
+  <h1 class="text-3xl font-bold mb-6 text-center">SwiftHeartX</h1>
+
+  <div class="space-y-4">
+
+    <div class="bg-[#0f172a] p-4 rounded-2xl shadow-lg shadow-blue-500/10 flex justify-between items-center">
+      <div>
+        <h2 class="font-semibold">Heartopia Auto Paint</h2>
+        <p class="text-sm text-gray-400">Premium</p>
+      </div>
+      <button class="bg-green-500 hover:bg-green-600 px-4 py-2 rounded-xl">
+        Launch
+      </button>
+    </div>
+
+    <div class="bg-[#0f172a] p-4 rounded-2xl shadow-lg shadow-purple-500/10 flex justify-between items-center">
+      <div>
+        <h2 class="font-semibold">Heartopia Auto Music</h2>
+        <p class="text-sm text-gray-400">Free</p>
+      </div>
+      <button class="bg-gray-600 px-4 py-2 rounded-xl">
+        Locked
+      </button>
+    </div>
+
+  </div>
+
+  <div id="updateNotice" class="hidden mt-6 text-center text-yellow-400">
+    กำลังมีอัปเดตใหม่...
+  </div>
+
+</div>
+
+<script src="renderer.js"></script>
+</body>
+</html>

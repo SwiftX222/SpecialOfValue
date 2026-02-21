@@ -1,0 +1,31 @@
+{
+  "name": "swiftheartx",
+  "version": "1.0.1",
+  "description": "SwiftHeartX Launcher",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "build": {
+    "appId": "com.swiftheartx.app",
+    "productName": "SwiftHeartX",
+    "win": {
+      "target": "nsis"
+    },
+    "publish": [
+      {
+        "provider": "github",
+        "owner": "SwiftX222",
+        "repo": "SpecialOfValue"
+      }
+    ]
+  },
+  "devDependencies": {
+  "electron": "^28.0.0",
+  "electron-builder": "^26.0.0"
+},
+  "dependencies": {
+  "electron-updater": "^6.0.0"
+}
+}
