@@ -1,11 +1,12 @@
 {
   "name": "swiftheartx",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "SwiftHeartX Launcher",
   "main": "main.js",
   "scripts": {
     "start": "electron .",
-    "build": "electron-builder"
+    "build": "electron-builder",
+    "dist": "electron-builder --publish always"
   },
   "build": {
     "appId": "com.swiftheartx.app",
