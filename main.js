@@ -25,7 +25,8 @@ app.whenReady().then(() => {
 });
 
 autoUpdater.on("update-available", () => {
-  mainWindow.webContents.send("update_available");
+  autoUpdater.autoDownload = true;
+  autoUpdater.checkForUpdatesAndNotify();
 });
 
 autoUpdater.on("update-downloaded", () => {
